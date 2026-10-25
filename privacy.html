@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gmail MCP Server privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #555; --bg: #fff; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8e8ea; --muted: #a8a8ad; --bg: #161618; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  h2 { font-size: 1.2rem; margin-top: 32px; }
+  p.lede { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lede">Gmail MCP Server · Last updated October 25, 2026</p>
+
+  <p>Gmail MCP Server is a personal tool that runs on its owner's own computers and connects the Claude Code assistant to that owner's Gmail account. This policy explains how it handles Google user data.</p>
+
+  <h2>Data it accesses</h2>
+  <p>With the owner's permission, granted on Google's sign-in screen, it uses these Gmail API scopes:</p>
+  <ul>
+    <li><strong>gmail.readonly</strong>: to search and read messages, threads, labels and drafts.</li>
+    <li><strong>gmail.compose</strong>: to create drafts and to send email when the owner asks.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <p>Email data is fetched only in response to a request the owner makes in Claude Code, and only to answer that request: for example, to summarize a thread, find a deadline or draft a reply. Email is sent only when the owner asks for it.</p>
+  <p>To answer those requests, the email content it reads is passed to Claude, the AI assistant made by Anthropic, as part of the owner's Claude Code conversation. Anthropic's handling of that content is covered by the owner's agreement with Anthropic.</p>
+  <p>The data is not used for advertising, is not sold, and is not used to train AI models by this tool.</p>
+
+  <h2>Storage</h2>
+  <p>The tool runs no server and keeps no database. The Google sign-in token and the OAuth client secret are stored only in the macOS keychain on the owner's computers. Email content is not saved to disk by the tool. It exists only in the Claude Code conversation where the owner asked for it.</p>
+
+  <h2>Sharing</h2>
+  <p>Google user data is not shared with anyone other than Anthropic as described above. It is never transferred or sold to third parties.</p>
+
+  <h2>Limited Use</h2>
+  <p>Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be removed at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Deleting the keychain entries removes the stored token from the computer.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="https://github.com/efsmert/claude-gmail/issues">open an issue on GitHub</a>.</p>
+
+  <p><a href="index.html">Back to Gmail MCP Server</a></p>
+</main>
+</body>
+</html>

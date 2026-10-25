@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gmail MCP Server</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #555; --bg: #fff; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8e8ea; --muted: #a8a8ad; --bg: #161618; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  p.lede { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  footer { margin-top: 40px; font-size: 0.9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gmail MCP Server</h1>
+  <p class="lede">A personal Gmail connector for Claude Code.</p>
+
+  <p>Gmail MCP Server is a small program that runs on its owner's own computers. It lets the Claude Code assistant search and read that person's Gmail, write drafts, and send email when they ask it to. It uses Google's Gmail API with the owner's own Google sign-in.</p>
+
+  <p>It is a single-user tool, not a public service. There is no website account, no server, and nothing to sign up for. Only the person who installs it and signs in with their own Google account can use it, and it can only reach that account's mailbox.</p>
+
+  <p>What it can do:</p>
+  <ul>
+    <li>Search, read and list Gmail threads, messages, labels and drafts.</li>
+    <li>Create drafts.</li>
+    <li>Send email and drafts, only when the owner asks.</li>
+  </ul>
+  <p>It cannot delete messages, empty Trash or change account settings.</p>
+
+  <p>Read the <a href="privacy.html">privacy policy</a> to see how Google user data is handled.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> · <a href="https://github.com/efsmert/claude-gmail/issues">Contact</a>
+  </footer>
+</main>
+</body>
+</html>
